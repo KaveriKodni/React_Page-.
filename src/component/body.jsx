@@ -24,18 +24,17 @@ function Body() {
     }, []);
 
     return (
-      
         <div id="movie-div" className="width">
             {items.length > 0 ? (
                 items.map((item, index) => (
                     <div key={item.show.id} className="details">
                         {item.show.image ?
-                            <img src={item.show.image.medium} alt={item.show.name} /> : <img src='https://dummyimage.com/300' alt='Dummy image' />
+                            <img src={item.show.image.medium} alt={item.show.name} /> : <img src={image} alt='Dummy image' />
                         }
                         <div className="inner-div">
                             <h3 id="head">{item.show.name}</h3>
                             <p id="para">{truncatepara(item.show.summary)}</p>
-                            <Link className='btn' to={`/summary/${item.show.id}`}>Book Ticket</Link>
+                            <Link className='btn' to={`/summary/${item.show.id}`}>Show More</Link>
                         </div>
                     </div>
                 ))

@@ -148,6 +148,19 @@ nav div {
     margin-top: 40px;
 }
 
+/* Booking Page */
+
+#book h1 {
+    margin-bottom: 20px;
+}
+
+#book input {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 300px;
+    padding: 5px 10px;
+}
+
 @media (max-width:799px) {
 
     .details {
@@ -166,7 +179,8 @@ nav div {
         width: 90%;
 
     }
+
     nav {
-       flex-direction: column;
+        flex-direction: column;
     }
 }
